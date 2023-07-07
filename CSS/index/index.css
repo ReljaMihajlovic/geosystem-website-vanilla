@@ -1,0 +1,99 @@
+
+/* Hero section */
+.hero{
+    padding: 120px;
+    /* background-color: aliceblue; */
+}
+.hero-container{
+    max-width: var(--column-12);
+    margin: auto;
+    position: relative;
+}
+.hero-info{
+    max-width: var(--column-5);
+    display: flex;
+    flex-direction: column;
+}
+.hero h1{
+    color: var(--clr-primary-blue);
+}
+.hero p{
+    font-weight: var(--font-light);
+}
+.hero-info small{
+    color: var(--clr-gray-300);
+    font-weight: var(--font-medium);
+}
+.hero-img{
+    z-index: -1;
+    position: absolute;
+    width: 950px;
+    top: -100px;
+    right: -330px;
+}
+
+/* Services section */
+.services{
+    width: 100%;
+    background-image:linear-gradient(0deg, #2D4069 10%,rgba(120.06249949336052, 174.03750121593475, 255, 1) 100%);
+    padding: 120px 120px;
+}
+.services h1{
+    text-align: center;
+    color: var(--clr-primary-white);
+}
+.services-container{
+    margin: auto;
+    max-width: var(--column-12);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.service-card{
+    max-width: 330px;
+}
+.service-card img{
+    object-fit: contain;
+    height: 200px;
+    width: 100%;
+}
+.service-card h3, .service-card p{
+    color: var(--clr-primary-white);
+}
+.service-card p{
+    font-weight: var(--font-light);
+}
+
+/* About us section */
+.about-us::before{    
+    z-index: -1;
+    content: "";
+    background-image: url(/Assets/topography-mesh.png);
+    background-size: cover;
+    position: absolute;
+    inset: 0;
+    opacity: 0.06;
+}
+.about-us{
+    position: relative;
+    padding: 96px 120px;
+}
+.about-us-info h1 span{
+    color: var(--clr-primary-blue);
+}
+.about-us-container{
+    max-width: var(--column-12);
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+}
+.about-us img{
+    max-width: var(--column-5);
+    object-fit:contain;
+}
+.about-us-info{
+    max-width: var(--column-5);
+}
+.about-us-info p{
+    font-weight: var(--font-medium);
+}

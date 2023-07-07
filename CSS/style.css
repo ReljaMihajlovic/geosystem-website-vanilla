@@ -1,0 +1,143 @@
+:root {
+  /* Colors. */
+  --clr-primary-blue: #077EC3;
+  --clr-primary-orange: #F7931E;
+  --clr-primary-dark-gray: #303030;
+  --clr-primary-white: #FFFFFF;
+  --clr-primary-footer: #303844;
+  --clr-accent-green: #158658;
+  --clr-gray-100: #EAEAEA;
+  --clr-gray-200: #B8B8B8;
+  --clr-gray-300: #A3A3A3;
+
+  /* Column lengths */
+  --column-1: 82px;
+  --column-2: 183px;
+  --column-3: 285px;
+  --column-4: 387px;
+  --column-5: 488px;
+  --column-6: 590px;
+  --column-7: 692px;
+  --column-8: 793px;
+  --column-9: 895px;
+  --column-10: 997px;
+  --column-11: 1098px;
+  --column-12: 1200px;
+
+  /* Font weights */
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  /* Font sizes */
+  --font-size-16: 16px;
+  --font-size-24: 24px;
+  --font-size-32: 32px;
+  --font-size-56: 56px;
+
+  --font-size-small: 12px;
+  --font-size-p: 16px;
+  --font-size-h3: 24px;
+  --font-size-h2: 32px;
+  --font-size-h1: 56px;
+ 
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* font-weight: 400; */
+  color: rgb(30, 30, 30);
+  background-color: #ffffff;
+
+  /* line-height: 1.5; */
+  /* font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%; */
+}
+
+/* 1. Use a more-intuitive box-sizing model. */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/* 2. Remove default margin */
+* {
+  padding: 0;
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  /* max-width: 100%; */
+}
+/* 6. Remove built-in form typography styles */
+input, button, textarea, select {
+  font: inherit;
+}
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/* 8. Create a root stacking context */
+#root, #__next {
+  isolation: isolate;
+}
+
+h1{
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-bold);
+}
+h2{
+  font-size: var(--font-size-h2);
+}
+h3{
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-semibold);
+}
+p{
+  font-size: var(--font-size-p);
+}
+small{
+  font-size: var(--font-size-small);
+}
+
+/* Utility classes */
+.margin-block-16{
+  margin-block: 16px;
+}
+.margin-block-24{
+  margin-block: 24px;
+}
+.margin-block-32{
+  margin-block: 32px;
+}
+.margin-block-48{
+  margin-block: 48px;
+}
+
+.margin-bottom-16{
+  margin-bottom: 16px;
+}
+.margin-bottom-24{
+  margin-bottom: 24px;
+}
+.margin-bottom-32{
+  margin-bottom: 32px;
+}
+.margin-bottom-48{
+  margin-bottom: 48px;
+}
+.margin-bottom-72{
+  margin-bottom: 72px;
+}
+
+
