@@ -2,7 +2,6 @@
 /* Hero section */
 .hero{
     padding: 120px;
-    /* background-color: aliceblue; */
 }
 .hero-container{
     max-width: var(--column-12);
@@ -97,3 +96,119 @@
 .about-us-info p{
     font-weight: var(--font-medium);
 }
+
+/* Projects section */
+.projects{
+    background-color: #EFF7FC;
+    padding: 120px;
+}
+.projects-container{
+    max-width: var(--column-12);
+    margin: auto;
+}
+.project{
+    position: relative;
+    display: flex;
+    margin-bottom: 120px;
+}
+.project-container{
+    max-width: var(--column-6);
+}
+.project header h2{
+    color: var(--clr-primary-orange);
+}
+.project-text p{
+    font-weight: var(--font-medium);
+    margin-bottom: 16px;
+}
+.projects h1{
+    color: var(--clr-primary-blue);
+}
+.additional-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.state-info{
+    display: flex;
+    align-items: center;
+    color: var(--clr-accent-green);
+    font-weight: var(--font-bold);
+}
+.state-flag{
+    max-width: 56px;
+    margin-right: 16px;
+}
+.additional-info .nesto{
+    color: var(--clr-gray-200);
+    font-weight: var(--font-bold);
+}
+.project-image{
+    position: absolute;
+    object-fit:cover;
+    border-radius: 50%;
+    box-shadow: rgba(100, 100, 111, 0.6) 0px 7px 29px 0px;
+}
+.change-sides{
+    justify-content: flex-end;
+}
+.first-image{
+    width: 300px;
+    height: 300px;
+    top: 50px;
+    right: 60px;
+}
+.second-image{
+    width: 200px;
+    height: 200px;
+    top: 0px;
+    right: 30px;
+}
+.third-image{
+    width: 300px;
+    height: 300px;
+    top: 0px;
+    left: 30px;
+}
+.fourth-image{
+    width: 180px;
+    height: 180px;
+    top: -50px;
+    left: 160px;
+}
+.fifth-image{
+    width: 130px;
+    height: 130px;
+    bottom: 20px;
+    left: 220px;
+}
+
+/* Clients section */
+.clients{
+    background-color: #DFF4FF;
+    padding: 36px 120px;
+
+}
+.clients-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: var(--column-12);
+}   
+.client-logo-img{
+    max-height: 50px;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1280px) {
+    .client-logo-img{
+        max-height: 40px;
+    }
+  }
