@@ -199,16 +199,55 @@
     max-height: 50px;
 }
 
-
-
-
-
-
-
-
+/* Contact section */
+.contact::before{    
+    z-index: -1;
+    content: "";
+    background-image: url(/Assets/topography-mesh-white-cropped.png);
+    background-size:cover;
+    position: absolute;
+    inset: 0;
+    opacity: 0.1;
+}
+.contact{
+    isolation: isolate;
+    background-color: #4B6CAC;
+    padding-top: 120px;
+    padding-bottom: 300px;
+    padding-inline: 120px;
+    position: relative;
+}
+.contact form{
+    margin: 0 auto;
+    background-color: var(--clr-primary-white);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: var(--column-8);
+    padding: 36px 40px;
+}
+.contact-form input,textarea{
+    border: none;
+    border-bottom: 1px var(--clr-gray-300) solid;
+    font-weight: var(--font-light);
+    padding-block: 8px;
+    margin-bottom: 32px;
+    resize: none;
+}
+input:focus, textarea:focus{
+    outline: none;
+    border-bottom: 1px #3f567a solid;
+}
 
 @media screen and (max-width: 1280px) {
     .client-logo-img{
         max-height: 40px;
     }
   }
+  @media screen and (max-width: 1200px){
+    .contact{
+        padding-bottom: 190px;
+    }
+}
+
+  

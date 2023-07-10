@@ -18,3 +18,9 @@ button{
     padding-block: 14px;
     padding-inline: 62px;
 }
+.submit{
+    background-color: var(--clr-submit-buttom);
+    border: var(--clr-primary-dark-gray) solid 2px;
+    padding-block: 14px;
+    padding-inline: 62px;
+}
