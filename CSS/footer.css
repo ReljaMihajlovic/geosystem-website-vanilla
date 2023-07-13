@@ -20,12 +20,14 @@ footer{
 }
 .quick-links a{
     margin-bottom: 16px;
-    font-weight: var(--font-regular);
+    font-weight: var(--font-medium);
 }
 .contact-wrapper{
     display: flex;
     margin-bottom: 16px;
     align-content: center;
+    font-weight: var(--font-medium);
+    flex-wrap: wrap;
 }
 .contact-wrapper img{
     margin-right: 12px;
@@ -56,7 +58,18 @@ footer{
     top: -175px;
     left: 100px;
 }
-
+.footer-secondary h3, .footer-secondary a{
+    color: var(--clr-primary-dark-gray);
+}
+.footer-secondary{
+    background-color: var(--clr-secondary-footer);  
+}
+.footer-secondary .footer-worker-img{
+    background-image: url(/Assets/footer-worker-neon-yellow.svg);
+}
+.footer-secondary .footer-grass-img{
+    background-image: url(/Assets/footer-grass-neon-yellow.svg);
+}
 @media screen and (max-width: 410px) {
     .footer-grass-img{
         background-size: cover;
