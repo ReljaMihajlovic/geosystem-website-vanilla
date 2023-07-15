@@ -14,6 +14,7 @@ nav li a{
   font-weight: var(--font-ligth);
   text-transform: uppercase;
   text-decoration: none; /* no underline */
+  display: inline-block;
 }
 ul li:not(:first-child){
     margin-left: 64px;
@@ -36,4 +37,22 @@ nav .navbar{
     align-items: center;
     max-width: var(--column-12);;
     margin-inline: auto;
+}
+nav li a::after{
+    display: block;
+    content: '';
+    height: 1px;
+    width: 0px;
+    background-color: var(--clr-primary-dark-gray);
+    transition: width 300ms;
+}
+nav li a:hover::after{
+    width: 100%;
+}
+.active::after{
+    display: block;
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: var(--clr-primary-dark-gray);
 }
