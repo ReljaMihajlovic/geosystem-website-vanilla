@@ -3,6 +3,10 @@ nav{
     box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 5px;
     padding-block: 16px;
     padding-inline: 120px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
 }
 nav li a{
   color: var(--clr-primary-dark-gray);

@@ -1,0 +1,81 @@
+.header-container{
+    background-color: #F4FAFD;
+    isolation: isolate;
+    position: relative;
+    padding-inline: 120px;
+}
+.header-container::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("/Assets/topography-mesh.png");
+    opacity: 0.04;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+h1{
+    padding: 80px 120px;
+    background: linear-gradient(to top, #39587D, #5A8BA8);
+    position: relative;
+    text-align: center;
+    z-index: -1;
+    color: var(--clr-primary-white);
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+}
+h1::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("/Assets/mesh-project-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.1;
+}
+.additional-info{
+    max-width: var(--column-12);
+    margin: 0 auto;
+    padding-block: 32px 120px;
+}
+.location-flag{
+    max-height: 35px;
+    border-radius: 10px;
+}
+.additional-info h2{
+    max-width: var(--column-6);
+    color: var(--clr-primary-blue);
+    word-wrap: break-word;
+}
+.additional-info h3{
+    max-width: var(--column-6);
+    color: #858585;
+    word-wrap: break-word;
+}
+.project-image{
+    position: relative;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    isolation: isolate;
+    border-radius: 10px;
+}
+.project-image::before{    
+    z-index: -1;
+    content: "";
+    background-image:linear-gradient(0deg, #000000 10%, rgba(255, 255, 255, 0) 50%);
+    position: absolute;
+    inset: 0;
+    opacity: 0.6;
+    border-radius: 10px;
+}
+.project-image .info{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    color: var(--clr-primary-white);
+    font-weight: var(--font-bold);
+}
+.info p{
+    font-size: 24px;
+}

@@ -1,10 +1,11 @@
-function getScrollHeight(elm, elm_padding){
+window.addEventListener('load', function () {
+  function getScrollHeight(elm, elm_padding){
     var savedValue = elm.value
     elm.value = ''
     elm._baseScrollHeight = elm.scrollHeight - elm_padding;
     elm.value = savedValue
   }
-  
+
   function onExpandableTextareaInput({ target:elm }){
     // make sure the input event originated from a textarea and it's desired to be auto-expandable
     if( !elm.classList.contains('autoExpand') || !elm.nodeName == 'TEXTAREA' ) return
@@ -19,3 +20,4 @@ function getScrollHeight(elm, elm_padding){
   // global delegated event listener
   const message_txtarea = document.getElementById("message");
   message_txtarea.addEventListener("input", onExpandableTextareaInput);
+}, false);

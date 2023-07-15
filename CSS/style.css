@@ -62,6 +62,9 @@
 *, *::before, *::after {
   box-sizing: border-box;
 }
+html{
+  width: 100vw;
+}
 /* 2. Remove default margin */
 * {
   padding: 0;
