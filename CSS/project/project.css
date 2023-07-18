@@ -1,3 +1,7 @@
+:root{
+    --shadow-sideline: rgba(0, 0, 0, 0.4) 0px 4px 4px;
+    --shadow-icon: rgba(0, 0, 0, 0.1) 0px 4px 4px;
+}
 .header-container{
     background-color: #F4FAFD;
     isolation: isolate;
@@ -78,4 +82,99 @@ h1::before{
 }
 .info p{
     font-size: 24px;
+}
+main{
+    padding-inline: 120px;
+    position: relative;
+}
+.wrapper{
+    padding-block: 64px 200px;
+    margin: 0 auto;
+    /* background-color: #5A8BA8; */
+    max-width: var(--column-12);
+    display: grid;
+    grid-template-columns: 1fr 11fr;
+    column-gap: 20px;
+    row-gap: 40px;
+    align-items: center;
+}
+.icon{
+    justify-self: center;
+    padding: 10px;
+    background-color: #77B1E8;
+    border-radius: 50%;
+    box-shadow: var(--shadow-icon);
+}
+.images-wrapper{
+    display: flex;
+    
+}
+.images-wrapper img{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 32px;
+}
+.content h2{
+    margin-bottom: 16px;
+    color: var(--clr-primary-orange);
+}
+.content p{
+    font-weight: var(--font-medium);
+}
+.wrapper .content:nth-of-type(-n + 2){
+    color: white;
+}
+.content:nth-last-of-type(-n + 3), .icon:nth-last-of-type(-n + 3){
+    margin-bottom: 80px;
+}
+.background-1{
+    top: 0px;
+    left: 0px;
+    background: linear-gradient(to top, #38567C, #466D90);
+    width: 100%;
+    /* This height is edited with JS; project.js*/
+    height: 40%; 
+    position: absolute;
+    z-index: -99;
+    isolation: isolate;
+}
+.background-1::before{
+    content: '';
+    background-image: url(/Assets/topography-mesh-white.png);
+    inset: 0;
+    opacity: 0.06;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.background-2{
+    left: 0px;
+    background: #F4FAFD;
+    width: 100%;
+    bottom: 0px;
+    position: absolute;
+    z-index: -100;
+    isolation: isolate;
+}
+.background-2::before{
+    content: '';
+    background-image: url(/Assets/topography-mesh.png);
+    inset: 0;
+    opacity: 0.03;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.decoration-line{
+    width: 2px;
+    background-color: #77B1E8;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: -2;
+    box-shadow: var(--shadow-sideline);
 }

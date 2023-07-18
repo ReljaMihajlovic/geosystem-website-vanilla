@@ -3,27 +3,27 @@
     isolation: isolate;
     position: relative;
 }
-.project:nth-child(odd){
+.project:nth-child(even){
     background: linear-gradient(to left, #140C33, #48465D);
 }
-.project:nth-child(odd)::before{
+.project:nth-child(even)::before{
     background-image: url(/Assets/topography-mesh.png);
 }
-.project:nth-child(even){
+.project:nth-child(odd){
     background: linear-gradient(to right, #051727, #3E5063);
 }
-.project:nth-child(even)::before{
+.project:nth-child(odd)::before{
     background-image: url(/Assets/topography-mesh-white-cropped.png);
     opacity: 0.08;
 }
-.project:nth-child(even) .project-info{
+.project:nth-child(odd) .project-info{
     order: 2;
 }
-.project:nth-child(even) .project-img{
+.project:nth-child(odd) .project-img{
     margin-left: 0px;
     margin-right: 80px;
 }
-.project:last-child{
+.project:last-of-type {
     padding-bottom: 260px;
 }
 .project::before{

@@ -16,12 +16,17 @@
     <nav id="navbar">
         <div class="navbar">
             <a href=""><img src="..\Assets\logo.png" class="logo" alt=""></a>
-            <ul>
+            <ul class="menu-items">
                 <li><a href="" class="active">Početna</a></li>
                 <li><a href="">O nama</a></li>
-                <li><a href="">Projekti</a></li>
+                <li><a href="./projects.html">Projekti</a></li>
                 <li><a href="">Kontakt</a></li>
-              </ul>
+            </ul>
+            <button class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
     <section class="hero">
@@ -32,8 +37,8 @@
                     <p>Ovde ce da ide tekst koji opisuje kako možemo da pomognemo nekome. U dve do tri kratke rečenice.</p>
                 </header>
                 <div class="hero-button-container margin-bottom-16">
-                    <button class="primary-button">Poziv na akciju</button>
-                    <button class="secondary-button">Ovde tekst.</button>
+                    <button class="primary-button button">Poziv na akciju</button>
+                    <button class="secondary-button button">Ovde tekst.</button>
                 </div>
                 <small>Neki sitan tekst.</small>
             </div>
@@ -69,7 +74,7 @@
                 <h1 class="margin-bottom-32"><span>Geosystem,</span> postojimo već 25 godina.</h1>
                 <p class="margin-bottom-32">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat sint corrupti molestias, rerum commodi doloribus maxime enim distinctio iste ut</p>
                 <p class="margin-bottom-32">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat sint corrupti molestias, rerum commodi doloribus maxime enim distinctio iste ut, dolore consectetur soluta at eaque quis cumque, dolorum autem. Odio?</p>
-                <button class="primary-button">Pročitaj više</button>
+                <button class="primary-button button">Pročitaj više</button>
             </div>
         </div>
     </section>
@@ -141,7 +146,7 @@
             <input type="text" name="msg-header" id="msg-header" placeholder="Unesite naslov">
             <label for="message">Poruka</label>
             <textarea name="message" id="message" class="autoExpand margin-bottom-56"  data-min-rows='1' rows="1" placeholder="Unesite poruku"></textarea>
-            <button class="submit">Pošalji</button>
+            <button class="button submit">Pošalji</button>
         </form>
     </section>
     <footer>

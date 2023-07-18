@@ -5,7 +5,6 @@ window.addEventListener('load', function () {
     elm._baseScrollHeight = elm.scrollHeight - elm_padding;
     elm.value = savedValue
   }
-
   function onExpandableTextareaInput({ target:elm }){
     // make sure the input event originated from a textarea and it's desired to be auto-expandable
     if( !elm.classList.contains('autoExpand') || !elm.nodeName == 'TEXTAREA' ) return
@@ -16,8 +15,9 @@ window.addEventListener('load', function () {
     rows = parseInt((elm.scrollHeight - elm_padding - elm._baseScrollHeight) / elm._baseScrollHeight);
     elm.rows = minRows + rows
   }
-  
+
   // global delegated event listener
   const message_txtarea = document.getElementById("message");
   message_txtarea.addEventListener("input", onExpandableTextareaInput);
+  
 }, false);
