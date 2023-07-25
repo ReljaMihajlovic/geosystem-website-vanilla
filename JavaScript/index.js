@@ -15,9 +15,19 @@ window.addEventListener('load', function () {
     rows = parseInt((elm.scrollHeight - elm_padding - elm._baseScrollHeight) / elm._baseScrollHeight);
     elm.rows = minRows + rows
   }
-
+  changeSidePadding = () => {
+    let windowWidth = this.window.innerWidth;
+    if(windowWidth < 641){
+      document.documentElement.style.setProperty('--index-page-padding', '24px');
+    }else if(windowWidth < 1025){
+      document.documentElement.style.setProperty('--index-page-padding', '56px');
+    }else{
+      document.documentElement.style.setProperty('--index-page-padding', '120px');
+    }
+  }
+  changeSidePadding();
   // global delegated event listener
   const message_txtarea = document.getElementById("message");
   message_txtarea.addEventListener("input", onExpandableTextareaInput);
-  
+  this.addEventListener('resize', changeSidePadding);
 }, false);

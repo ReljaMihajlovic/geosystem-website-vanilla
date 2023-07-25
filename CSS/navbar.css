@@ -2,7 +2,7 @@ nav{
     background-color: var(--clr-primary-white);
     box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 5px;
     padding-block: 16px;
-    padding-inline: 120px;
+    padding-inline: var(--main-side-padding);
     width: 100%;
     position: fixed;
     top: 0px;
@@ -77,6 +77,9 @@ nav .navbar{
     width: 100%;
     background-color: var(--clr-primary-dark-gray);
 }
+.rotate-icon{
+    transform: rotate(90deg);
+}
 @media screen and (max-width: 1050px){
     .burger-icon{
         display: flex;
@@ -109,7 +112,4 @@ nav .navbar{
     .active{
         background-color: var(--clr-primary-orange);
     }
-}
-.rotate-icon{
-    transform: rotate(90deg);
 }

@@ -1,7 +1,14 @@
 
 /* Hero section */
 .hero{
-    padding: 120px;
+    padding-block: 120px;
+    padding-inline: var(--main-side-padding);
+    overflow: hidden;
+    transition: 200ms;
+    position: relative;
+}
+#total-station-hero-img{
+    display: none;
 }
 .hero-container{
     max-width: var(--column-12);
@@ -17,7 +24,7 @@
     color: var(--clr-primary-blue);
 }
 .hero p{
-    font-weight: var(--font-light);
+    font-weight: var(--font-semibold);
 }
 .hero-info small{
     color: var(--clr-gray-300);
@@ -26,16 +33,16 @@
 .hero-img{
     z-index: -1;
     position: absolute;
-    width: 950px;
-    top: -100px;
-    right: -330px;
+    width: 1020px;
+    bottom: -200px;
+    right: -280px;
 }
 
 /* Services section */
 .services{
     width: 100%;
     background-image:linear-gradient(0deg, #2D4069 10%,rgba(120.06249949336052, 174.03750121593475, 255, 1) 100%);
-    padding: 120px 120px;
+    padding: 120px var(--main-side-padding);
 }
 .services h1{
     text-align: center;
@@ -51,9 +58,18 @@
 .service-card{
     max-width: 330px;
 }
+.service-card:nth-of-type(n):not(:last-of-type):not(:first-of-type){
+    margin-inline: 20px;
+}
+.service-card:first-of-type{
+    margin-right: 20px;
+}
+.service-card:last-of-type{
+    margin-left: 20px;
+}
 .service-card img{
     object-fit: contain;
-    height: 200px;
+    height: 50%;
     width: 100%;
 }
 .service-card h3, .service-card p{
@@ -75,20 +91,20 @@
 }
 .about-us{
     position: relative;
-    padding: 96px 120px;
+    padding: 96px var(--main-side-padding);
 }
 .about-us-info h1 span{
     color: var(--clr-primary-blue);
 }
 .about-us-container{
     max-width: var(--column-12);
-    margin:auto;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
 .about-us img{
     max-width: var(--column-5);
-    object-fit:contain;
+    object-fit: contain;
 }
 .about-us-info{
     max-width: var(--column-5);
@@ -96,11 +112,14 @@
 .about-us-info p{
     font-weight: var(--font-medium);
 }
-
+.filler-div{
+    min-width: var(--tablet-column-3);
+    display: none;
+}
 /* Projects section */
 .projects{
     background-color: #EFF7FC;
-    padding: 120px;
+    padding: var(--main-side-padding);
 }
 .projects-container{
     max-width: var(--column-12);
@@ -186,7 +205,7 @@
 /* Clients section */
 .clients{
     background-color: #DFF4FF;
-    padding: 36px 120px;
+    padding: 36px var(--main-side-padding);
 
 }
 .clients-container{
@@ -197,6 +216,7 @@
 }   
 .client-logo-img{
     max-height: 50px;
+    min-width: 0px;
 }
 
 /* Contact section */
@@ -214,7 +234,7 @@
     background-color: #4B6CAC;
     padding-top: 120px;
     padding-bottom: 290px;
-    padding-inline: 120px;
+    padding-inline: var(--main-side-padding);
     position: relative;
 }
 .contact form{
@@ -243,11 +263,196 @@ input:focus, textarea:focus{
     .client-logo-img{
         max-height: 40px;
     }
-  }
-  @media screen and (max-width: 1200px){
+}
+@media screen and (max-width: 1200px){
     .contact{
         padding-bottom: 190px;
     }
 }
 
-  
+/* Desktop 1025px - +1440px  */
+
+/* Additional changes */
+@media screen and (max-width: 1230px) {
+    .project-container{
+        max-width: var(--column-5);
+    }
+}
+@media screen and (max-width: 1310px) {
+    .hero-img{
+        right: -400px;
+    }
+}
+@media screen and (max-width: 1170px) {
+    #girl-hero-img{
+        display: none;
+    }
+    #total-station-hero-img{
+        display: block;
+    }
+    .hero-img{
+        width: 1020px;
+        bottom: -200px;
+        right: -200px;
+    }
+}
+
+/* Tablet 1024px - 641px  */
+@media screen and (max-width: 1024px){
+    :root{
+        --service-card-margin: 38px;
+        --client-logo-margin: 10px;
+    }
+    /* Hero section */
+    .hero{
+        padding-block: 72px;
+    }
+    .hero-info{
+        max-width: var(--tablet-column-5);
+    }
+    .hero-img{
+        right: -160px;
+        bottom: -160px;
+    }
+
+    /* Services section */
+    .services-container{
+        flex-direction: column;
+        align-items:center;
+    }
+    .service-card{
+        text-align: center;
+    }
+    .service-card p{
+        font-weight: var(--font-regular);
+    }
+    .service-card:nth-of-type(n):not(:last-of-type):not(:first-of-type){
+        margin-inline: 0px;
+        margin-block: var(--service-card-margin);
+    }
+    .service-card:first-of-type{
+        margin-right: 0px;
+        margin-bottom: var(--service-card-margin);
+    }
+    .service-card:last-of-type{
+        margin-left: 0px;
+        margin-top: var(--service-card-margin);
+    }
+
+    /* About us section */
+    .about-us{
+        position: relative;
+        overflow: hidden;
+    }
+    .about-us-container{
+        margin: 0;
+        justify-content: stretch;
+    }
+    .about-us-info{
+        max-width: var(--tablet-column-4);
+    }
+    .about-us img{
+        object-fit: contain;
+        position: absolute;
+        bottom: -50px;
+        right: -400px;
+        height: 600px;
+        max-width: none;
+        z-index: -2;
+    }
+    .filler-div{
+        display: block;
+    }
+
+    /* Projects section */
+    .projects{
+        padding-block: 10%;
+    }
+    .project{
+        flex-direction: column;
+        max-width: var(--tablet-column-8);
+        margin-bottom: 64px;
+    }
+    .project:last-of-type{
+        margin-bottom: 0px;
+    }
+    .project-container{
+        max-width: var(--tablet-column-8);
+    }
+    .project-image{
+        position: static;
+        border-radius: 0;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        min-width: 0;
+        border-radius: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 7px 0px;
+    }
+    .project-image-container{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .first-image{
+        margin-right: 24px;
+    }
+    .third-image{
+        display: none;
+    }
+    .fourth-image{
+        display: none;
+    }
+    .fifth-image{
+        aspect-ratio: 16 / 8;
+    }
+
+    /* Clients section */
+    .client-logo-img:nth-child(n):not(:first-child):not(:last-child){
+        margin-inline: var(--client-logo-margin);
+    }
+    .client-logo-img:last-child{
+        margin-left: var(--client-logo-margin);
+    }
+    .client-logo-img:first-child{
+        margin-right: var(--client-logo-margin);
+    }
+}
+@media screen and (max-width: 828px) {
+    .about-us-info h1{
+        font-size: 48px;
+    }
+    .about-us img{
+        height: 650px;
+        right: -550px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .about-us-info h1{
+        font-size: 56px;
+    }
+    .about-us-info{
+        max-width: var(--tablet-column-8);
+    }
+    .about-us img{
+        display: none;
+    }
+    .filler-div{
+        display: none;
+    }
+}
+@media screen and (max-width: 920px) {
+    #total-station-hero-img{
+        display: none;
+    }
+    .hero::after{
+        position: absolute;
+        background-image: url(/Assets/topography-mesh.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        content: '';
+        inset: 0;
+        opacity: 0.1;
+        z-index: -1;
+    }
+}

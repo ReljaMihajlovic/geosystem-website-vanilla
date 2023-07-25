@@ -1,5 +1,5 @@
 footer{
-    padding: 60px 120px;
+    padding: 60px var(--main-side-padding);
     background-color: var(--clr-primary-footer);
     position: relative;
     color: var(--clr-primary-white);
@@ -10,6 +10,7 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 .footer h3{
     font-weight: var(--font-medium);
@@ -17,6 +18,7 @@ footer{
 .quick-links{
     display: flex;
     flex-direction: column;
+    margin-right: 32px;
 }
 .quick-links a{
     margin-bottom: 16px;
@@ -44,7 +46,7 @@ footer{
     position: absolute;
     height: 55px;
     width: 100%;
-    top: -55px;
+    top: -53px;
     left: 0px;
     background-image: url(/Assets/footer-grass-dark-blue.svg);
     background-repeat: repeat-x;
@@ -53,10 +55,11 @@ footer{
     position: absolute;
     background-image: url(/Assets/footer-worker-dark-blue.svg);
     background-repeat: no-repeat;
+    background-position-x: 100px;
     height: 160px;
     width: 100%;
     top: -175px;
-    left: 100px;
+    left: 0px;
 }
 .footer-secondary h3, .footer-secondary a{
     color: var(--clr-primary-dark-gray);

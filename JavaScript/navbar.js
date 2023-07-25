@@ -7,8 +7,44 @@ window.addEventListener('load', function () {
     }
     return false;
   }
+  function addEmptyDivToFirstElement(){
+    const navbar = document.getElementById('navbar');
+    const emptyDiv = document.createElement('div');
+    emptyDiv.style.height = navbar.offsetHeight + 'px';
+    // emptyDiv.style.backgroundColor = "#000";
+    navbar.nextElementSibling.prepend(emptyDiv);
+  }
+  function addPaddingToFirstElement(padding){
+    const navbar = document.getElementById('navbar');
+    if(!padding){
+      padding = parseInt(window.getComputedStyle(navbar.nextElementSibling, null).getPropertyValue('padding-top'));
+    }
+    navbar.nextElementSibling.style.paddingTop = padding + navbar.offsetHeight + 'px';
+  }
+  // function addPaddingToFirstElement(){
+  //   const navbar = document.getElementById('navbar');
+  //   const firstElementsPaddingTop = parseInt(window.getComputedStyle(navbar.nextElementSibling, null).getPropertyValue('padding-top'));
+  //   navbar.nextElementSibling.style.paddingTop = firstElementsPaddingTop + navbar.offsetHeight + 'px';
+  // }
+  // function handleMatchedMedia(e){
+  //   if (e.matches) {
+  //     addPaddingToFirstElement();
+  //   }
+  // }
+  // addPaddingToFirstElement();
+  // const tabletMediaQuery = window.matchMedia('(max-width: 1024px)');
+  // tabletMediaQuery.addEventListener("change", () => {
+  //   console.log("da");
+  //   addPaddingToFirstElement(72);
+  // });
+  // const desktopMediaQuery = window.matchMedia('(min-width: 1025px)');
+  // desktopMediaQuery.addEventListener("change", () => {
+  //   addPaddingToFirstElement(120);
+  // });
+  addEmptyDivToFirstElement();
+
+
   var lastScrollTop;
-  const navbar = document.getElementById('navbar');
   window.addEventListener('scroll',function(){
     var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     if(scrollTop > lastScrollTop){
@@ -20,8 +56,6 @@ window.addEventListener('load', function () {
     }
     lastScrollTop = scrollTop;
   });
-  const firstElementsPaddingTop = parseInt(window.getComputedStyle(navbar.nextElementSibling, null).getPropertyValue('padding-top'));
-  navbar.nextElementSibling.style.paddingTop = firstElementsPaddingTop + navbar.offsetHeight + 'px';
   const burgerButton = this.document.querySelector('.burger-icon');
   const menuItems = this.document.querySelector('.menu-items');
   burgerButton.addEventListener('click', function(){
@@ -34,7 +68,6 @@ window.addEventListener('load', function () {
     }
   });
   this.addEventListener('click', function(event){
-    console.log(event.target);
     if(checkBurgerButtonClasses(burgerButton) && !event.target.classList.contains('burger-icon')){
       burgerButton.classList.remove('rotate-icon');
       menuItems.style.right = '-35vw';
