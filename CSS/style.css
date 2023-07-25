@@ -135,6 +135,9 @@ p{
 small{
   font-size: var(--font-size-small);
 }
+a:hover{
+  text-decoration: underline;
+}
 
 /* Utility classes */
 .margin-block-16{
@@ -178,9 +181,20 @@ small{
     --main-side-padding: 56px;
   }
 }
+
 @media screen and (max-width: 640px) {
   :root{
-    --main-side-padding: 24px;
+    --main-side-padding: 16px;
+    --font-size-h1: 48px;
+    --font-size-h2: 24px;
+    --font-size-h3: 18px;
+  }
+}
+@media screen and (max-width: 360px) {
+  :root{
+    --font-size-h1: 34px;
+    --font-size-h2: 24px;
+    --font-size-h3: 18px;
   }
 }
 

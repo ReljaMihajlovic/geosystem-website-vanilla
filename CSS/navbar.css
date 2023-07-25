@@ -113,3 +113,20 @@ nav .navbar{
         background-color: var(--clr-primary-orange);
     }
 }
+
+/* Phone 640px - 0px */
+@media screen and (max-width: 640px){
+    ul li a{
+        font-size: 16px;
+    }
+    nav .logo{
+        height: 35px;
+    }
+    .burger-icon{
+        height: 20px;
+    }
+    .burger-icon span{
+        height: 2px;
+
+    }
+}

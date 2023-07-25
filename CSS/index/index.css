@@ -30,6 +30,12 @@
     color: var(--clr-gray-300);
     font-weight: var(--font-medium);
 }
+.hero-button-container{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    column-gap: 16px;
+}
 .hero-img{
     z-index: -1;
     position: absolute;
@@ -54,11 +60,13 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    column-gap: 56px;
+    row-gap: 56px;
 }
 .service-card{
     max-width: 330px;
 }
-.service-card:nth-of-type(n):not(:last-of-type):not(:first-of-type){
+/* .service-card:nth-of-type(n):not(:last-of-type):not(:first-of-type){
     margin-inline: 20px;
 }
 .service-card:first-of-type{
@@ -66,7 +74,7 @@
 }
 .service-card:last-of-type{
     margin-left: 20px;
-}
+} */
 .service-card img{
     object-fit: contain;
     height: 50%;
@@ -101,10 +109,12 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    column-gap: 64px;
 }
 .about-us img{
     max-width: var(--column-5);
     object-fit: contain;
+    min-width: 450px;
 }
 .about-us-info{
     max-width: var(--column-5);
@@ -129,9 +139,12 @@
     position: relative;
     display: flex;
     margin-bottom: 120px;
+    column-gap: 64px;
+    justify-content: space-between;
 }
 .project-container{
     max-width: var(--column-6);
+    width: 100%;
 }
 .project header h2{
     color: var(--clr-primary-orange);
@@ -157,49 +170,60 @@
 .state-flag{
     max-width: 56px;
     margin-right: 16px;
+    border-radius: 4px;
 }
 .additional-info .nesto{
     color: var(--clr-gray-200);
     font-weight: var(--font-bold);
 }
+.project-image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+}
 .project-image{
     position: absolute;
-    object-fit:cover;
+    object-fit: cover;
     border-radius: 50%;
     box-shadow: rgba(100, 100, 111, 0.6) 0px 7px 29px 0px;
+    height: 100%;
 }
 .change-sides{
-    justify-content: flex-end;
+    order: 1;
 }
 .first-image{
-    width: 300px;
-    height: 300px;
-    top: 50px;
-    right: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    height: 330px;
+    aspect-ratio: 1 / 1;
 }
 .second-image{
     width: 200px;
     height: 200px;
     top: 0px;
-    right: 30px;
+    right: 0px;
+    transform: translateY(-20%);
 }
 .third-image{
-    width: 300px;
-    height: 300px;
-    top: 0px;
-    left: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+    height: 330px;
+    aspect-ratio: 1 / 1;
 }
 .fourth-image{
     width: 180px;
     height: 180px;
     top: -50px;
-    left: 160px;
+    right: 0px;
 }
 .fifth-image{
     width: 130px;
     height: 130px;
-    bottom: 20px;
-    left: 220px;
+    bottom: 0px;
+    left: 0px;
+    transform: translateX(-20%);
 }
 
 /* Clients section */
@@ -326,18 +350,6 @@ input:focus, textarea:focus{
     .service-card p{
         font-weight: var(--font-regular);
     }
-    .service-card:nth-of-type(n):not(:last-of-type):not(:first-of-type){
-        margin-inline: 0px;
-        margin-block: var(--service-card-margin);
-    }
-    .service-card:first-of-type{
-        margin-right: 0px;
-        margin-bottom: var(--service-card-margin);
-    }
-    .service-card:last-of-type{
-        margin-left: 0px;
-        margin-top: var(--service-card-margin);
-    }
 
     /* About us section */
     .about-us{
@@ -379,7 +391,7 @@ input:focus, textarea:focus{
     .project-container{
         max-width: var(--tablet-column-8);
     }
-    .project-image{
+    .project-image-container img{
         position: static;
         border-radius: 0;
         width: 100%;
@@ -388,25 +400,30 @@ input:focus, textarea:focus{
         min-width: 0;
         border-radius: 10px;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 7px 0px;
+        transform: translate(0, 0);
+    }
+    .first-image{
+        aspect-ratio: unset;
     }
     .project-image-container{
         width: 100%;
         display: flex;
         flex-direction: row;
-    }
-    .first-image{
-        margin-right: 24px;
+        column-gap: 2%;
     }
     .third-image{
-        display: none;
+        aspect-ratio: 16 / 8;
+        border-radius: 0px;
     }
     .fourth-image{
         display: none;
     }
     .fifth-image{
-        aspect-ratio: 16 / 8;
+        display: none;
     }
-
+    .change-sides{
+        order:unset;
+    }
     /* Clients section */
     .client-logo-img:nth-child(n):not(:first-child):not(:last-child){
         margin-inline: var(--client-logo-margin);
@@ -428,9 +445,9 @@ input:focus, textarea:focus{
     }
 }
 @media screen and (max-width: 800px) {
-    .about-us-info h1{
+    /* .about-us-info h1{
         font-size: 56px;
-    }
+    } */
     .about-us-info{
         max-width: var(--tablet-column-8);
     }
@@ -455,4 +472,42 @@ input:focus, textarea:focus{
         opacity: 0.1;
         z-index: -1;
     }
+}
+
+/* Phone 640px - 0px  */
+@media screen and (max-width: 640px){
+    /* Hero section  */
+    .hero-info header{
+        margin-bottom: 32px;
+    }
+    .hero-button-container{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 16px;
+        column-gap: 16px;
+    }
+
+    /* Projects section */
+    .additional-info{
+        flex-wrap: wrap;
+        row-gap: 8px;
+        column-gap: 40px;
+    }
+    .additional-info p{
+        font-size: 14px;
+    }
+    .state-flag{
+        margin-right: 8px;
+        max-width: 45px;
+    }
+    .second-image{
+      display: none;  
+    }
+    .first-image{
+        aspect-ratio: 16 / 8;
+    }
+}
+/* Additional changes for phone */
+@media screen and (max-width: 360px) {
+    
 }
