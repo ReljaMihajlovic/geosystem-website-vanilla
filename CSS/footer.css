@@ -1,5 +1,5 @@
 footer{
-    padding: 60px var(--main-side-padding);
+    padding: 60px var(--side-padding);
     background-color: var(--clr-primary-footer);
     position: relative;
     color: var(--clr-primary-white);

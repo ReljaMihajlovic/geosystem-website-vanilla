@@ -2,7 +2,7 @@ nav{
     background-color: var(--clr-primary-white);
     box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 5px;
     padding-block: 16px;
-    padding-inline: var(--main-side-padding);
+    padding-inline: var(--side-padding);
     width: 100%;
     position: fixed;
     top: 0px;
@@ -86,7 +86,9 @@ nav .navbar{
     }
     .menu-items{
         position: absolute;
-        top: 86px;
+        /* top: 86px; */
+        bottom: 0px;
+        transform: translateY(100%);
         right: -35vw;
         height: 100vh;
         background-color: rgba(0, 0, 0, 0.507);
@@ -94,7 +96,9 @@ nav .navbar{
         min-width: 35vw;
         display: flex;
         flex-direction: column;
-        transition: 300ms;
+        transition: right 0.5s ease, translateY 0s;
+        transition: right, 300ms;
+        /* transition: , 100ms; */
     }
     ul li:not(:first-child){
         margin-left: 0px;

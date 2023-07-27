@@ -1,5 +1,9 @@
+:root{
+    --project-column-gap: 56px;
+    --side-padding: 120px;
+}
 .project{
-    padding: 80px 120px;
+    padding: 80px var(--side-padding);
     isolation: isolate;
     position: relative;
 }
@@ -19,10 +23,10 @@
 .project:nth-child(odd) .project-info{
     order: 2;
 }
-.project:nth-child(odd) .project-img{
+/* .project:nth-child(odd) .project-img{
     margin-left: 0px;
     margin-right: 80px;
-}
+} */
 .project:last-of-type {
     padding-bottom: 260px;
 }
@@ -37,20 +41,22 @@
 }
 .project-img{
     background-repeat: no-repeat;
-    margin-left: 80px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 10px 0px;
     width: 100%;
     height: auto;
+    background-size: cover;
 }
 .project-container{
     margin: 0 auto;
     position: relative;
     max-width: var(--column-12);
     display: flex;
+    column-gap: var(--project-column-gap);
 }
 .project-info{
     max-width: var(--column-6);
+    width: 100%;
 }
 .project header h2{
     color: var(--clr-primary-orange);
@@ -70,6 +76,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    column-gap: 40px;
+    flex-wrap: wrap-reverse;
+    row-gap: 32px;
 }
 .state-info{
     display: flex;
@@ -90,4 +99,66 @@
     background-color: var(--clr-primary-dark-gray);
     color: var(--clr-secondary-footer);
 }
+@media screen and (max-width: 1280px) {
+    :root{
+        --side-padding: 56px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .project:last-of-type{
+        padding-bottom: 120px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    :root{
+        --side-padding: 32px;
 
+        --font-size-h2: 40px;
+        --font-size-p: 16px;
+    }
+    .project-container{
+        flex-direction: column;
+        row-gap: 72px;
+    }
+    .project-info{
+        max-width: none;
+        display: flex;
+        flex-direction: column;
+    }
+    .project-img{
+        aspect-ratio: 16 / 8;
+        margin-bottom: 24px;
+    }
+    .project:nth-child(odd) .project-info{
+        order:unset;
+    }
+    .project-info button{
+        order: 5;
+    }
+    .project-text{
+        margin-bottom: 8px;
+    }
+    .project-info button{
+        align-self: flex-start;
+    }
+}
+
+@media  screen and (max-width: 640px) {
+    :root{
+        --side-padding: 16px;
+        --font-size-h2: 32px;
+    }
+    .nesto{
+        font-size: 12px;
+    }
+    .state-name{
+        font-size: 16px;
+        font-weight: var(--font-bold);
+    }
+    .state-flag{
+        max-width: 45px;
+    }
+    .project-info header h2{
+        margin-bottom: 8px;
+    }
+}

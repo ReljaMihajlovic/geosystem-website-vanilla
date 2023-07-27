@@ -1,9 +1,12 @@
 window.addEventListener('load', function () {
     function getFirstIconsOffset(){
-        return document.querySelector('.icon:nth-of-type(1)').offsetTop;
+        return document.querySelector('.icon').offsetTop;
     }
     function getLastIconsOffset(){
-        return document.querySelector('.icon:last-of-type').offsetTop;
+        const icons = document.querySelectorAll('.icon');
+        console.log(icons);
+        return icons[icons.length - 1].offsetTop;
+        // return document.querySelector('.icon:last-of-type').offsetTop;
     }
     function changeDecorationLinesHeight(){
         document.querySelector('.decoration-line').style.height = getLastIconsOffset() - getFirstIconsOffset() + 'px';
@@ -15,6 +18,7 @@ window.addEventListener('load', function () {
     background2.style.top = backgroundFirstPart.style.height;
     changeDecorationLinesHeight();
     this.addEventListener("resize", (event) => {
+        console.log("DA");
         backgroundFirstPart.style.height = middleImage.offsetTop + middleImage.offsetHeight/2 + 'px';
         background2.style.top = backgroundFirstPart.style.height;
         changeDecorationLinesHeight();
