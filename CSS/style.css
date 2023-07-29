@@ -135,7 +135,7 @@ p{
 small{
   font-size: var(--font-size-small);
 }
-a:hover{
+a:not(.menu-items li a):hover{
   text-decoration: underline;
 }
 
@@ -176,12 +176,6 @@ a:hover{
 }
 
 /* Side padding change */
-@media screen and (max-width: 1024px) {
-  :root{
-    /* --main-side-padding: 56px; */
-  }
-}
-
 @media screen and (max-width: 640px) {
   :root{
     /* --main-side-padding: 16px; */

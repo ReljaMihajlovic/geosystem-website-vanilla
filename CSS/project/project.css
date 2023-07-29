@@ -79,8 +79,8 @@ h1::before{
 }
 .project-image .info{
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    bottom: 5%;
+    left: 3%;
     color: var(--clr-primary-white);
     font-weight: var(--font-bold);
 }
@@ -112,7 +112,7 @@ main{
     display: grid;
     grid-template-columns: 1fr 11fr;
     column-gap: 20px;
-    row-gap: 40px;
+    row-gap: 24px;
     align-items: center;
 }
 .icon{
@@ -136,8 +136,7 @@ main{
 #middle-image{
     aspect-ratio: 16 / 9;
 }
-.content h2{
-    margin-bottom: 16px;
+.wrapper h2{
     color: var(--clr-primary-orange);
 }
 .content p{
@@ -206,11 +205,22 @@ main{
         --side-padding: 56px;
     }
 }
+@media screen and (max-width: 1200px) {
+    .wrapper{
+        padding-bottom: 120px;
+    }
+}
 @media screen and (max-width: 1024px) {
     :root{
         --side-padding: 32px;
 
         --font-size-h1: 38px;
+    }
+    .wrapper{
+        row-gap: 24px;
+    }
+    .wrapper h2{
+        margin-bottom: 0px;
     }
     h1{
         padding-block: 56px;
@@ -223,12 +233,21 @@ main{
         font-size: 14px;
         font-weight: var(--font-medium);
     }
+    .icon{
+        padding: 10px;
+    }
+    .icon img{
+        width: 18px;
+    }
 }
 @media screen and (max-width: 640px) {
     :root{
         --side-padding: 16px;
 
         --font-size-h1: 24px;
+    }
+    .wrapper{
+        row-gap: 16px;
     }
     h1{
         padding-block: 24px;
@@ -242,6 +261,9 @@ main{
         max-height: 25px;
         border-radius: 6px;
     }
+    .content p{
+        font-size: 14px;
+    }
     .location-info h3{
         font-size: 14px;
     }
@@ -253,5 +275,17 @@ main{
     }
     .images-wrapper img{
         aspect-ratio: 16 / 9;
+    }
+    .icon{
+        padding: 8px;
+    }
+    .icon img{
+        width: 16px;
+    }
+}
+@media  screen and (max-width: 360px) {
+    .info p{
+        font-size: 12px;
+        font-weight: var(--font-regular);
     }
 }

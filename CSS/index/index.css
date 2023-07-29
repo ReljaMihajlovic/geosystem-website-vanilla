@@ -524,5 +524,7 @@ input:focus, textarea:focus{
 }
 /* Additional changes for phone */
 @media screen and (max-width: 360px) {
-    
+    .contact form{
+        padding: 16px 24px;
+    }
 }
