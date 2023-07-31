@@ -17,7 +17,7 @@ window.addEventListener('load', function () {
         }
     }
     function changeLanguage(language){
-        fetch("../Languages/language_" + language + ".json").then(function (response){
+        fetch("/Languages/language_" + language + ".json").then(function (response){
             return response.json();
         }).then((parsedJSON)=>{
             const currentPage = document.body.getAttribute('data-page');
