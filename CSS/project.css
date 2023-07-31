@@ -13,7 +13,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background-image: url("/Assets/topography-mesh.png");
+    background-image: url("../Assets/topography-mesh.png");
     opacity: 0.04;
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,7 +34,7 @@ h1::before{
     content: '';
     position: absolute;
     inset: 0;
-    background-image: url("/Assets/mesh-project-background.png");
+    background-image: url("../Assets/mesh-project-background.png");
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.1;
@@ -169,7 +169,7 @@ ul{
 }
 .background-1::before{
     content: '';
-    background-image: url(/Assets/topography-mesh-white.png);
+    background-image: url("../Assets/topography-mesh-white.png");
     inset: 0;
     opacity: 0.06;
     position: absolute;
@@ -187,7 +187,7 @@ ul{
 }
 .background-2::before{
     content: '';
-    background-image: url(/Assets/topography-mesh.png);
+    background-image: url("../Assets/topography-mesh.png");
     inset: 0;
     opacity: 0.03;
     position: absolute;

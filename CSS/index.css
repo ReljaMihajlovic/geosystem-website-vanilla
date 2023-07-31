@@ -94,7 +94,7 @@
 .about-us::before{    
     z-index: -1;
     content: "";
-    background-image: url(/Assets/topography-mesh.png);
+    background-image: url("../Assets/topography-mesh.png");
     background-size: cover;
     position: absolute;
     inset: 0;
@@ -250,7 +250,7 @@
 .contact::before{    
     z-index: -1;
     content: "";
-    background-image: url(/Assets/topography-mesh-white-cropped.png);
+    background-image: url("../Assets/topography-mesh-white-cropped.png");
     background-size:cover;
     position: absolute;
     inset: 0;
@@ -471,7 +471,7 @@ input:focus, textarea:focus{
     }
     .hero::after{
         position: absolute;
-        background-image: url(../Assets/topography-mesh.png);
+        background-image: url("../Assets/topography-mesh.png");
         background-repeat: no-repeat;
         background-size: cover;
         content: '';

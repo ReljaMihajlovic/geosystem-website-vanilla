@@ -11,13 +11,13 @@
     background: linear-gradient(to left, #140C33, #48465D);
 }
 .project:nth-child(even)::before{
-    background-image: url(/Assets/topography-mesh.png);
+    background-image: url("../Assets/topography-mesh.png");
 }
 .project:nth-child(odd){
     background: linear-gradient(to right, #051727, #3E5063);
 }
 .project:nth-child(odd)::before{
-    background-image: url(/Assets/topography-mesh-white-cropped.png);
+    background-image: url("../Assets/topography-mesh-white-cropped.png");
     opacity: 0.08;
 }
 .project:nth-child(odd) .project-info{
