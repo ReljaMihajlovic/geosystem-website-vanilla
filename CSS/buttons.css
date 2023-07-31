@@ -24,6 +24,16 @@
     padding-block: 14px;
     border-radius: 10px;
 }
+.language-button{
+    width: 40px;
+    height: 20px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
 @media screen and (max-width: 360px) {
     .button{
         padding-inline: 16px;

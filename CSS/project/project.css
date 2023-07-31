@@ -66,7 +66,8 @@ h1::before{
     background-size: cover;
     isolation: isolate;
     border-radius: 10px;
-    /* background-position: center; */
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px 0px;
+    background-position: center;
 }
 .project-image::before{    
     z-index: -1;
@@ -115,12 +116,19 @@ main{
     row-gap: 24px;
     align-items: center;
 }
+ul{
+    list-style-position: inside;
+}
 .icon{
     justify-self: center;
     padding: 10px;
     background-color: #77B1E8;
     border-radius: 50%;
     box-shadow: var(--shadow-icon);
+}
+.icon img{
+    width: 23px;
+    aspect-ratio: 1 / 1;
 }
 .images-wrapper{
     display: flex;

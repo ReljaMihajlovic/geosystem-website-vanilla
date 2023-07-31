@@ -59,55 +59,105 @@
     },
 
     "projects" : {
-        "project_button_read_more" : "",
+        "project_button_read_more" : "Pročitaj više",
 
-        "project1_title" : "",
-        "project1_state_name" : "",
-        "project1_some_text" : "",
-        "project1_paragraph1" : "",
-        "project1_paragraph2" : "",
+        "project1_title" : "Geodetski radovi na izgradnji čelične krovne konstrukcije fudbalskog stadiona u Franceville.",
+        "project1_state_name" : "Gabon",
+        "project1_some_text" : "Neka statistika ili nesto.",
+        "project1_paragraph1" : "Projekat izgradnje fudbalskog stadiona Franceville bio je podeljen u više građevinskih faza. Jedna od njih, izuzetno tehnički i organizaciono zahtevna, bila je i izgradnja čelične krovne konstrukcije.",
+        "project1_paragraph2" : "Nadstrešnica postavljena iznad tribina sastoji se od rešetkaste grede velikih dimenzija koja se centralmnim delom oslanja na rezervoare za vodu od armiranog betona, a krajevima na prevrnuti deo rešetkaste grede formirajući stubove. Ispod rešetkaste grede okačeni su nosači od dvostrukog elastičnog materijala. Nosači podupiru metalne ploče na kojima je fiksirana čitava čelična skela koja formira krov.",
 
-        "project2_title" : "",
-        "project2_state_name" : "",
-        "project2_some_text" : "",
-        "project2_paragraph1" : "",
-        "project2_paragraph2" : "",
+        "project2_title" : "Geodetski radovi na izgradnji pristupnih saobraćajnica mosta na Adi sa novobeogradske strane.",
+        "project2_state_name" : "Srbija",
+        "project2_some_text" : "Neka statistika ili nesto.",
+        "project2_paragraph1" : "Godine 1923, arhitekta Đorđe Kovaljevski je uradio prvu urbanističku skicu Beograda sa mostom preko Ade Ciganlije. Ova saobraćajnica ili njeni pojedini segmenti postojala je u ranijim planovima sa donekle izmenjenim položajem pod različitim imenima: magistralni prsten, transverzala, istočna tangenta. Ono što Je bilo svima zajedničko je most preko Ade Ciganlije.",
+        "project2_paragraph2" : "Most na Adi je drumski i šinski most u Beogradu koji povezuje opštine Novi Beograd i Cukarica. Most je predviđen kao deo beogradskog unutrašnjeg magistralnog poluprstena (UMP) koji bi povezivao Novi Beograd i Zvezdaru.",
 
-        "project3_title" : "",
-        "project3_state_name" : "",
-        "project3_some_text" : "",
-        "project3_paragraph1" : "",
-        "project3_paragraph2" : "",
+        "project3_title" : "Geodetski radovi na izgradnji autoputa Maribor - Lendava.",
+        "project3_state_name" : "Slovenija",
+        "project3_some_text" : "Neka statistika ili nesto.",
+        "project3_paragraph1" : "Slovenačka podružnica Geosystema u Ljubljani izvela je geodetske radove na autoputu Maribor – Lendava, Republika Slovenija u periodu od kraja 2006. do sredine 2009. godine, u haselju Pernica i na potezu Slivnica – Draženci.",
+        "project3_paragraph2" : "Prenošenje glavnog projekta autoputa na teren postupkom obeležavanja i vršenje kontrolnih merenja u toku gradnje. U sklopu izgradnje autoputa, neophodhbho je bilo realizovati građevinske objekte: 2 mosta, 9 devijacija, 3 podvožnjaka, 2 nadvožnjaka, 2 kružna toka i 4 priključna kraka autoputu.",
 
-        "project4_title" : "",
-        "project4_state_name" : "",
-        "project4_some_text" : "",
-        "project4_paragraph1" : "",
-        "project4_paragraph2" : ""
+        "project4_title" : "Geodetski radovi na projektu rekonstrukcije 5. i 6. staničnog koloseka Železničke stanica Beograd Centar (Prokop).",
+        "project4_state_name" : "Srbija",
+        "project4_some_text" : "Neka statistika ili nesto.",
+        "project4_paragraph1" : "Železnička stanica Beograd Centar (Prokop) je železnička stanica u Beogradu, u okviru Beogradskog železničkog čvora. Nalazi se neposredno uz Bulevar Franš d'Eperea (deo koridora 10), u prokopu između ovog pravca, Bulevara kn. Aleksandra Karađorđevića i Bulevara Vojvode Putnika podno Topčiderskog brda.",
+        "project4_paragraph2" : "Geosystem Je izveo geodetske radove na gornjem stroju po projektu rekonstrukcije 5. i 6. staničnog koloseka, sa privremenom kolosečnom vezom za levi banatski kolosek, u ZŽelezničkoj stanici Beograd Centar."
     },
 
     "project" : {
         "concise_project_title" : "",
         "project_title" : "",
-        "project_statistics" : "",
-        "project_contractor" : "<br>",
+        "project_statistics" : "Neki statisticki podatak.",
+        "project_contractor" : "Izvođači radova:<br>",
 
-        "project_situation_analysis_title" : "",
+        "project_situation_analysis_title" : "Analiza stanja",
         "paragraph_situation_analysis" : "",
 
-        "project_objectives_title" : "",
+        "project_objectives_title" : "Ciljevi",
         "paragraph_objectives" : "",
 
-        "project_problems_title" : "",
+        "project_problems_title" : "Problemi",
         "paragraph_problems" : "",
 
-        "project_solution_title" : "",
+        "project_solution_title" : "Rešenja",
         "paragraph_solution" : "",
 
-        "project_process_title" : "",
+        "project_process_title" : "Proces",
         "paragraph_process" : "",
 
-        "project_conclusion_title" : "",
+        "project_conclusion_title" : "Zaključak",
         "paragraph_conclusion" : ""
+    },
+
+    "gabon-stadium-project" : {
+        "concise_project_title" : "Stadion u Gabonu",
+        "project_title" : "Geodetski radovi na izgradnji čelične krovne konstrukcije fudbalskog stadiona u Franceville.",
+        "project_statistics" : "Neki statisticki podatak.",
+        "project_contractor" : "Izvođači radova:<br>Amiga Kraljevo Primorje, Strabag",
+
+        "project_situation_analysis_title" : "Analiza stanja",
+        "paragraph_situation_analysis" : "Projekat izgradnje fudbalskog stadiona Franceville bio Je podeljen u više građevinskih faza. Jedna od njih, izuzetno tehnički i organizaciono zahtevna, bila je i izgradnja čelične krovne konstrukcije. Nadstrešnica postavljena iznad tribina sastoji se od rešetkaste grede velikih dimenzija koja se centralmnim delom oslanja na rezervoare za vodu od armiranog betona, a krajevima na prevrnuti deo rešetkaste grede formirajući stubove. Ispod rešetkaste grede okačeni su nosači od dvostrukog elastičnog materijala. Nosači podupiru metalne ploče na kojima je fiksirana čitava čelična skela koja formira krov.",
+
+        "project_objectives_title" : "Ciljevi",
+        "paragraph_objectives" : "Omogućiti da geometrija objekta bude precizno realizovana u skladu sa zahtevanom tačnošću. Omogucćiti da geometrija ravanskih i prostornih čeličnih rešetki bude u skladu sa projektom.",
+
+        "project_problems_title" : "Problemi",
+        "paragraph_problems" : "Izgrađeni betonski rezervoari su prostorno odstupali od projektovanog stanja, 15 – 20 cm po osama. Nagle i česte promene atmosferskih uticaja imale su za posledicu stvaranja heterogenih uslova za geodetska merenja.",
+
+        "project_solution_title" : "Rešenja",
+        "paragraph_solution" : "Betonski rezervoari trapeznog oblika su osnova za čelične stubove koji nose prostornu čeličnu rešetku krovne konstrukcije. Na svakom se nalazi 5 prirubnica koje se fiksiraju za betonsku osnovu i na sebi imaju prostor za po 6 anker rupa. U trenutku spuštanja čelične konstrukcije svaki od ukupno 30 anker šrafova treba istovremeno da uđe u odgovarajući otvor na prirubnici. Da bi se to uspešno realizovalo, neophodno je imati geodetsku mrežu visoke tačnosti i adekvatnu geodetsku opremu koja je mogla da obezbedi tako pouzdana merenja.",
+
+        "project_process_title" : "Proces",
+        "paragraph_process" : "<ul><li>Realizacija geodetske mreže visoke tačnosti</li><li>Snimanje faktičkog stanja betonskih rezervoara i ocena tačnosti njihovog položaja u odnosu na projektovano stanje. </li><li>Uspostavljanje proizvodnog placa za izgradnju ravanskih i prostornih čeličnihrešetki</li><li>Bezbednost na radu geodetskih stručnjaka </li><li>Vođehje geodetskog dnevnika</li></ul>",
+
+        "project_conclusion_title" : "Zaključak",
+        "paragraph_conclusion" : "Objekat je uspešno završen u predviđenom roku, ne malom zaslugom kvalitetno blagovremeno izvedenih geodetskih rešenja i radova. Definisanjem proizvodnog procesa i interdisciplinarnim pristupom, stručnjaci Geosystema omogućili su kvalitetno, brzo i sigurno izvođenje radova."
+    },
+
+    "ada-bridge-access-roads" : {
+        "concise_project_title" : "Most na Adi",
+        "project_title" : "Geodetski radovi na izgradnji pristupnih saobraćajnica mosta na Adi sa novobeogradske strane.",
+        "project_statistics" : "Neki statisticki podatak.",
+        "project_contractor" : "Izvođači radova:<br>Porr Bau Gmbh, ogranak Beograd",
+
+        "project_situation_analysis_title" : "Analiza stanja",
+        "paragraph_situation_analysis" : "Godine 1923, arhitekta Đorđe Kovaljevski je uradio prvu urbanističku skicu Beograda sa mostom preko Ade Ciganlije. <br>Ova saobraćajnica ili njeni pojedini segmenti postojala je u ranijim planovima sa donekle izmenjenim položajem pod različitim imenima: magistralni prsten, transverzala, istočna tangenta. Ono što Je bilo svima zajedničko je most preko Ade Ciganlije. <br>Most na Adi je drumski i šinski most u Beogradu koji povezuje opštine Novi Beograd i Cukarica. Most je predviđen kao deo beogradskog unutrašnjeg magistralnog poluprstena (UMP) koji bi povezivao Novi Beograd i Zvezdaru. PROJEKAT Geodetski radovi na izgradnji pristupnih saobraćajnica mosta na Adi sa novobeogradske strane IZVODJAČ GRAĐEVINSKIH RADOVA Porr Bau Gmbh, ogranak Beograd ",
+
+        "project_objectives_title" : "Ciljevi",
+        "paragraph_objectives" : "Prenošenje Glavnog projekta pristupnih saobraćajnica na teren u postupku obeležavanja i kontrolnih merenja: šipova, naglavica šipova, nosećih stubova, poprečnih greda – naglavice stubova, ležajeva, rasponske konstrukcije.",
+
+        "project_problems_title" : "Problemi",
+        "paragraph_problems" : "Kratak vremenski rok za kontrolu postojeće geodetske mreže neophodhe za realizaciju projekta i sagledavanje i kontrola karakterističnih elemenata postojeće konstrukcije na koju se oslanjaju pristupne saobraćajnice.",
+
+        "project_solution_title" : "Rešenja",
+        "paragraph_solution" : "Geosystem je pre početka radova izvršio kontrolu geodetske mreže, kao osnovu bez koje nije bio u mogućnosti da prihvati uvođenje svojih stručnjaka u posao. Rezultati kontrole su  pokazali da je mreža u skladu zahtevanom tačnošću projekta.<br>U skladu sa metodologijom geodetskih radova, koju je Geosystem izradio za potrebe realizacije ovog projekta, geodetski stručnjaci su imali zadatak da sve elemente za obeležavanje projekta na terenu, evidentiraju kroz usvojene standarde zahtevanih izveštaja.<br> U izveštajima je bilo neophodno prikazati sve ključne podatke projekta kako bi se njegova realizacija mogla pratiti i kontrolisati. <br>Da bi se zadovoljila dinamika građenja, Geosystem Je bio prisutan na gradilištu 7 dana u nedelji, 30-31 dan mesečno. Vreme izrade izveštaja Je bilo koncipirano tako da realizovani radovi od danas su morali biti obrađeni kroz izveštaj i dnevnik geodetskih radova najkasnije narednog dana.",
+
+        "project_process_title" : "Proces",
+        "paragraph_process" : "<ul><li>Realizacija geodetske mreže visoke tačnosti</li><li>Snimanje faktičkog stanja izgrađenih elemenata na koje se oslanjaju pristupne saobraćajnice ı ocena tačnosti njihovog položaja i visina u odnosu na projektovano stanje </li><li>Bezbednost na radu geodetskih stručnjaka </li><li>Izrada izveštaja o izvršnim i kontrolnim merenjima, vođenje geodetskog dnevnika radova</li></ul>",
+
+        "project_conclusion_title" : "Zaključak",
+        "paragraph_conclusion" : "Objekat je uspešno završen u predviđenom roku, uz značajan doprinos stručnjaka Geosystema kvalitetnom, brzom i sigurnom izvođenju radova. U uslovima specifičnog gradilišta, rada na velikim visinama, od ključnog značaja bilo je obezbediti bezbednost na radu. Insistiranjem na strogom pridržavanju propisa i konstahtnim proverama bezbedhoshih uslova, ceo projekat je realizovan bez ijednog incidenta."
     }
 }

@@ -110,5 +110,55 @@
 
         "project_conclusion_title" : "",
         "paragraph_conclusion" : ""
+    },
+
+    "gabon-stadion-project" : {
+        "concise_project_title" : "",
+        "project_title" : "",
+        "project_statistics" : "",
+        "project_contractor" : "",
+
+        "project_situation_analysis_title" : "",
+        "paragraph_situation_analysis" : "",
+
+        "project_objectives_title" : "",
+        "paragraph_objectives" : "",
+
+        "project_problems_title" : "",
+        "paragraph_problems" : "",
+
+        "project_solution_title" : "",
+        "paragraph_solution" : "",
+
+        "project_process_title" : "",
+        "paragraph_process" : "",
+
+        "project_conclusion_title" : "",
+        "paragraph_conclusion" : ""
+    },
+
+    "ada-bridge-access-roads" : {
+        "concise_project_title" : "",
+        "project_title" : "",
+        "project_statistics" : "",
+        "project_contractor" : "",
+
+        "project_situation_analysis_title" : "",
+        "paragraph_situation_analysis" : "",
+
+        "project_objectives_title" : "",
+        "paragraph_objectives" : "",
+
+        "project_problems_title" : "",
+        "paragraph_problems" : "",
+
+        "project_solution_title" : "",
+        "paragraph_solution" : "",
+
+        "project_process_title" : "",
+        "paragraph_process" : "",
+
+        "project_conclusion_title" : "",
+        "paragraph_conclusion" : ""
     }
 }

@@ -59,55 +59,105 @@
     },
 
     "projects" : {
-        "project_button_read_more" : "",
+        "project_button_read_more" : "Read more",
 
-        "project1_title" : "",
-        "project1_state_name" : "",
-        "project1_some_text" : "",
-        "project1_paragraph1" : "",
-        "project1_paragraph2" : "",
+        "project1_title" : "Surveying works on the construction of steel roof construction of a football stadium in Franceville.",
+        "project1_state_name" : "Gabon",
+        "project1_some_text" : "Some statistic.",
+        "project1_paragraph1" : "The rectangular concrete tanks are the basis for the steel pillars that carry the spatial steel truss of the roof structure. Each has 5 flanges, fixed to the concrete base and incorporates the space for 6 anchor bolt holes.",
+        "project1_paragraph2" : "At the moment the steel structure is lowered each of the 30 anchor bolts should simultaneously enter the corresponding slot in the flange. It is therefore necessary to have a high precision geodetic network and adequate surveying equipment able to provide such reliable measurements.",
 
-        "project2_title" : "",
-        "project2_state_name" : "",
-        "project2_some_text" : "",
-        "project2_paragraph1" : "",
-        "project2_paragraph2" : "",
+        "project2_title" : "Surveying works on the construction of access roads from New Belgrade to the Ada Bridge.",
+        "project2_state_name" : "Serbia",
+        "project2_some_text" : "Some statistic.",
+        "project2_paragraph1" : "In 1923, architect Dorde Kovaljevski made the first urban planning sketch of Belgrade with the bridge over Ada Ciganlija. This route or at least some of its segments existed in previous plans with slightly altered position and under different names: main ring roads, transversal, eastern tangent. Their common denominator was the bridge over Ada Ciganlija.",
+        "project2_paragraph2" : "The Ada Bridge is a road-rail bridge that connects Belgrade municipalities of New Belgrade and Cukarica. The bridge was designed as a part of Belgrade Inner Ring Road (IRR), which would link New Belgrade and Zvezdara.",
 
-        "project3_title" : "",
-        "project3_state_name" : "",
-        "project3_some_text" : "",
-        "project3_paragraph1" : "",
-        "project3_paragraph2" : "",
+        "project3_title" : "Surveying works on the construction of the Maribor - Lendava highway.",
+        "project3_state_name" : "Republic of Slovenia",
+        "project3_some_text" : "Some statistic.",
+        "project3_paragraph1" : "The Slovenian branch of Geosystem in Lubllana performed surveying works on the Maribor — Lendava highway, Slovenia, in the period 2006-2009, in the settlement of Pernica on the Bistrica — Drazenci route.",
+        "project3_paragraph2" : "Transferring the main highway project to the field by the procedure of marking and making control measurements during construction. Within the highway construction the following structures were necessary to complete: 2 bridges, 9 deviations, 3 underpasses, 2 overpasses, 2 roundabouts and 4 highway access ramps.",
 
-        "project4_title" : "",
-        "project4_state_name" : "",
-        "project4_some_text" : "",
-        "project4_paragraph1" : "",
-        "project4_paragraph2" : ""
+        "project4_title" : "Surveying works on the reconstruction of the 5 and 6 track of the Belgrade Centre Railway station",
+        "project4_state_name" : "Serbia / Belgrade",
+        "project4_some_text" : "Some statistic.",
+        "project4_paragraph1" : "Railway Station Belgrade Centre (Prokop) is a railway station in Belgrade, within the Belgrade Railway Junction. It is located directly along the Frans d'Epere Boulevard (part of Corridor 10), between Kn. Aleksandar Karadjordjevicé Boulevard and Vojvode Putnika Boulevard, at the foot of Topéider Hill.",
+        "project4_paragraph2" : "Geosystem performed surveying works on the upper level according the project of reconstruction of the 5 and 6 tracks, with temporary track link to the left Banat railway track, in the Railway Station Belgrade Centre."
     },
 
     "project" : {
         "concise_project_title" : "",
         "project_title" : "",
-        "project_statistics" : "",
-        "project_contractor" : "",
+        "project_statistics" : "Some statistic informaction.",
+        "project_contractor" : "Project contractor:<br>",
 
-        "project_situation_analysis_title" : "",
+        "project_situation_analysis_title" : "Situation Analysis",
         "paragraph_situation_analysis" : "",
 
-        "project_objectives_title" : "",
+        "project_objectives_title" : "Objectives",
         "paragraph_objectives" : "",
 
-        "project_problems_title" : "",
+        "project_problems_title" : "Problems",
         "paragraph_problems" : "",
 
-        "project_solution_title" : "",
+        "project_solution_title" : "Solutions",
         "paragraph_solution" : "",
 
-        "project_process_title" : "",
+        "project_process_title" : "Process",
         "paragraph_process" : "",
 
-        "project_conclusion_title" : "",
+        "project_conclusion_title" : "Conclusion",
         "paragraph_conclusion" : ""
+    },
+
+    "gabon-stadium-project" : {
+        "concise_project_title" : "Franceville Stadium",
+        "project_title" : "Surveying works on the construction of steel roof construction of a football stadium in Franceville.",
+        "project_statistics" : "Some statistic informaction.",
+        "project_contractor" : "Project contractor:<br>Amiga",
+
+        "project_situation_analysis_title" : "Situation Analysis",
+        "paragraph_situation_analysis" : "The rectangular concrete tanks are the basis for the steel pillars that carry the spatial steel truss of the roof structure. Each has 5 flanges, fixed to the concrete base and incorporates the space for 6 anchor bolt holes. At the moment the steel structure is lowered each of the 30 anchor bolts should simultaneously enter the corresponding slot in the flange. It is therefore necessary to have a high precision geodetic network and adequate surveying equipment able to provide such reliable measurements.",
+
+        "project_objectives_title" : "Objectives",
+        "paragraph_objectives" : "On the production site it was necessary to form a network of steel patterns for plane and spatial steel structure. They form the geometry of the structure in the horizontal and vertical planes. Setting up the patterns required knowledge, experience and ability of mechanical engineering specialists in the implementation of this part of the project. It was also necessary to constantly monitor the geometry of the pattern on the ground, and to eliminate problems caused by mechanical shocks when lowering pipes into the pattern, during the manufacturing process.",
+
+        "project_problems_title" : "Problems",
+        "paragraph_problems" : "Short deadline for the control of the existing geodetic network necessary for the project realisation and the assessment and control of the characteristic elements of the existing structure that relate with access roads.",
+
+        "project_solution_title" : "Solutions",
+        "paragraph_solution" : "Prior to the works, Geosystem performed the geodetic network control as the basis for accepting and introducing its experts in the project.The control results showed that the  network was in line with the required accuracy of the project. <br>In accordance with the Methodology of Geodetic Works developed by Geosystem for the project realisation, the surveying experts were tasked to record all the elements for marking the project on the field through the accepted standards of the required reports. The reports had to present all the key project data so that its realisation could be monitored and controlled.<br>In order to meet the construction dynamics, Geosystem was present on the site 7 days a week, 30-31 days a month. The works realised during one day had to be explained through the report and the surveying journal during the next day at the latest.",
+
+        "project_process_title" : "Process",
+        "paragraph_process" : "<ul><li>Realisation of high precisi geodetic network </li><li>Surveying the factual situation of the concrete tanks and accuracy estimation of their position compared to the initial design </li><li>Forming a production site for the construction of plane and spatial steel grids </li><li>Safety at work of surveying experts</li><li>Keeping a surveying journal</li></ul>",
+
+        "project_conclusion_title" : "Conclusion",
+        "paragraph_conclusion" : "The facility was successfully completed within the set deadline, thanks to the efficiently and timely executed geodetic solutions and works. By defining the production process and applying interdisciplinary approach, the experts of Geosystem enabled high quality, quick and safe execution. <br>In the conditions of the specific climate and living space, the handling of the large and massive elements and working on heights, it was of key importance to ensure safety at work. By insisting on strict adherence to regulations and continuous control of safety conditions, the entire project was completed without a single incident. "
+    },
+
+    "ada-bridge-access-roads" : {
+        "concise_project_title" : "Ada Bridge",
+        "project_title" : "Surveying works on the construction of access roads from New Belgrade to the Ada Bridge.",
+        "project_statistics" : "Some statistic informaction.",
+        "project_contractor" : "Project contractor:<br>Porr Bau Gmbh",
+
+        "project_situation_analysis_title" : "Situation Analysis",
+        "paragraph_situation_analysis" : "In 1923, architect Dorde Kovaljevski made the first urban planning sketch of Belgrade with the bridge over Ada Ciganlija. This route or at least some of its segments existed in previous plans with slightly altered position and under different names: main ring roads, transversal, eastern tangent. Their common denominator was the bridge over Ada Ciganlija. The Ada Bridge is a road-rail bridge that connects Belgrade municipalities of New Belgrade and Cukarica. The bridge was designed as a part of Belgrade Inner Ring Road (IRR), which would link New Belgrade and Zvezdara. PROJECT Surveying works on the construction of access roads from New Belgrade to the Ada Bridge CONTRACTOR Porr Bau Gmbh.",
+
+        "project_objectives_title" : "Objectives",
+        "paragraph_objectives" : "Transferring the main project of access roads to the field in identification and control measurements: piles pile sleeves, pillars, beams - columns, bearings, span structure.  ",
+
+        "project_problems_title" : "Problems",
+        "paragraph_problems" : "Short deadline for the control of the existing geodetic network necessary for the project realisation and the assessment and control of the characteristic elements of the existing structure that relate with access roads. ",
+
+        "project_solution_title" : "Solutions",
+        "paragraph_solution" : "Prior to the works, Geosystem performed the geodetic network control as the basis for accepting and introducing its experts in the project. The control results showed that the  network was in line with the required accuracy of the project. In accordance with the Methodology of Geodetic Works developed by Geosystem for the project realisation, the surveying experts were tasked to record all the elements for marking the project on the field through the accepted standards of the required reports. The reports had to present all the key project data so that its realisation could be monitored and controlled. In order to meet the construction dynamics, Geosystem was present on the site 7 days a week, 30-31 days a month. The works realised during one day had to be explained through the report and the surveying journal during the next day at the latest.",
+
+        "project_process_title" : "Process",
+        "paragraph_process" : "<ul><li>Realisation of high precision geodeticaia cela </li><li>Surveying the factual situation of the built elements that relate to access roads and accuracy estimation of their position and 4 height compared to the initial design </li><li>Safety at work of surveying experts  </li><li>Creating reports on the executed and A Mn control measurements, keeping a surveyi</li></ul>",
+
+        "project_conclusion_title" : "Conclusion",
+        "paragraph_conclusion" : "The facility was successfully completed within the set deadline, with the considerable contribution of the Geosystem experts that enabled high quality, quick and safe execution. In the conditions of the specific construction site and the work on heights, it was of key importance to ensure safety at work. By insisting on strict adherence to regulations and continuous control of safety conditions, the entire project was completed without a single incident. ai A Wh waa: A A AA MT BY abe ne Geosystem experts received the highest oe ratings by senior experts from the company Porr and the supervisory authority for their discipline, dedication and professional and quality execution."
     }
 }

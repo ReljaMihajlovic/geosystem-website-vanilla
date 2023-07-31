@@ -17,8 +17,9 @@ nav li a{
   text-decoration: none; /* no underline */
   display: inline-block;
 }
-ul li:not(:first-child){
-    margin-left: 64px;
+.menu-items{
+    display: flex;
+    column-gap: 64px;
 }
 nav ul {
     list-style-type: none;
@@ -39,27 +40,21 @@ nav .navbar{
     max-width: var(--column-12);;
     margin-inline: auto;
 }
-/* nav li a::after{
-    display: block;
-    content: '';
-    height: 1px;
-    width: 0px;
-    background-color: var(--clr-gray-300);
-    transition: 300ms;
-} */
-/* nav li a:hover::after{
-    width: 100%;
-} */
+.top-bar{
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 10px;
+    margin-inline: auto;
+    max-width: var(--column-12);
+    /* position: absolute;
+    bottom: 0px;
+    right: 0px;
+    transform: translateY(100%);
+    margin-right: var(--side-padding); */
+}
 .active{
     color: var(--clr-primary-dark-gray);
 }
-/* .active::after{
-    display: block;
-    content: '';
-    height: 1px;
-    width: 100%;
-    background-color: var(--clr-primary-dark-gray);
-} */
 .burger-icon{
     display: none;
     width: 25px;
@@ -86,19 +81,22 @@ nav .navbar{
     }
     .menu-items{
         position: absolute;
-        /* top: 86px; */
-        bottom: 0px;
-        transform: translateY(100%);
-        right: -35vw;
-        height: 100vh;
-        background-color: rgba(0, 0, 0, 0.507);
-        /* max-width: 30vw; */
-        min-width: 35vw;
         display: flex;
         flex-direction: column;
-        transition: right 0.5s ease, translateY 0s;
-        transition: right, 300ms;
-        /* transition: , 100ms; */
+        height: 100vh;
+        min-width: 35vw;
+        background-color: rgba(0, 0, 0, 0.507);
+        bottom: 0px;
+        right: 0px;
+        transform: translateY(100%);
+        transform: translateX(100%);
+        transition: translateX 0.3s;
+    }
+    .open-navbar{
+        transform: translate(0%, 100%);
+    }
+    .close-navbar{
+        transform: translate(100%, 100%);
     }
     ul li:not(:first-child){
         margin-left: 0px;

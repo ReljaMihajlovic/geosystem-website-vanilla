@@ -27,7 +27,7 @@ window.addEventListener('load', function () {
             elements.forEach(element => {
                 const key = element.getAttribute('data-translate');
                 if(key in mergedObj){
-                    element.textContent = mergedObj[key];
+                    element.innerHTML = mergedObj[key];
                 }
             })
         }).catch((error) => {
@@ -40,7 +40,7 @@ window.addEventListener('load', function () {
     if(language = getLanguageCookieValue()){
         changeLanguage(language);
     }
-    const languageButtons = this.document.querySelectorAll('.button-language');
+    const languageButtons = this.document.querySelectorAll('.language-button');
     //Add event listener to every language button
     for(btn of languageButtons){
         btn.addEventListener('click', function(){

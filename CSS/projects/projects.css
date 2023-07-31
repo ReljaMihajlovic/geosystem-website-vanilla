@@ -23,10 +23,6 @@
 .project:nth-child(odd) .project-info{
     order: 2;
 }
-/* .project:nth-child(odd) .project-img{
-    margin-left: 0px;
-    margin-right: 80px;
-} */
 .project:last-of-type {
     padding-bottom: 260px;
 }
@@ -40,12 +36,13 @@
     opacity: 0.1;
 }
 .project-img{
-    background-repeat: no-repeat;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 10px 0px;
     width: 100%;
     height: auto;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .project-container{
     margin: 0 auto;
@@ -132,14 +129,11 @@
     .project:nth-child(odd) .project-info{
         order:unset;
     }
-    .project-info button{
+    .project-info a{
         order: 5;
     }
     .project-text{
         margin-bottom: 8px;
-    }
-    .project-info button{
-        align-self: flex-start;
     }
 }
 
@@ -159,6 +153,6 @@
         max-width: 45px;
     }
     .project-info header h2{
-        margin-bottom: 8px;
+        margin-bottom: 16px;
     }
 }
