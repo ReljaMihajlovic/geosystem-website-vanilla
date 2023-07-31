@@ -50,12 +50,12 @@ footer h3{
     width: 100%;
     top: -53px;
     left: 0px;
-    background-image: url(/Assets/footer-grass-dark-blue.svg);
+    background-image: url(../Assets/footer-grass-dark-blue.svg);
     background-repeat: repeat-x;
 }
 .footer-worker-img{
     position: absolute;
-    background-image: url(/Assets/footer-worker-dark-blue.svg);
+    background-image: url(../Assets/footer-worker-dark-blue.svg);
     background-repeat: no-repeat;
     background-position-x: 100px;
     height: 160px;
@@ -70,10 +70,10 @@ footer h3{
     background-color: var(--clr-secondary-footer);  
 }
 .footer-secondary .footer-worker-img{
-    background-image: url(/Assets/footer-worker-neon-yellow.svg);
+    background-image: url(../Assets/footer-worker-neon-yellow.svg);
 }
 .footer-secondary .footer-grass-img{
-    background-image: url(/Assets/footer-grass-neon-yellow.svg);
+    background-image: url(../Assets/footer-grass-neon-yellow.svg);
 }
 
 @media screen and (max-width: 1200px){

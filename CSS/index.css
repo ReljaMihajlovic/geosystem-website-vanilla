@@ -471,7 +471,7 @@ input:focus, textarea:focus{
     }
     .hero::after{
         position: absolute;
-        background-image: url(/Assets/topography-mesh.png);
+        background-image: url(../Assets/topography-mesh.png);
         background-repeat: no-repeat;
         background-size: cover;
         content: '';
