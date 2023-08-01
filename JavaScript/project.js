@@ -4,7 +4,6 @@ window.addEventListener('load', function () {
     }
     function getLastIconsOffset(){
         const icons = document.querySelectorAll('.icon');
-        console.log(icons);
         return icons[icons.length - 1].offsetTop;
     }
     function changeDecorationLinesHeight(){
@@ -15,7 +14,7 @@ window.addEventListener('load', function () {
     const middleImage = this.document.getElementById('middle-image');
     backgroundFirstPart.style.height = middleImage.offsetTop + middleImage.offsetHeight/2 + 'px';
     background2.style.top = backgroundFirstPart.style.height;
-    this.setTimeout(changeDecorationLinesHeight, 20);
+    this.setTimeout(changeDecorationLinesHeight, 200);
     this.addEventListener("resize", (event) => {
         backgroundFirstPart.style.height = middleImage.offsetTop + middleImage.offsetHeight/2 + 'px';
         background2.style.top = backgroundFirstPart.style.height;

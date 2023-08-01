@@ -39,6 +39,8 @@ window.addEventListener('load', function () {
     //Inital languge 
     if(language = getLanguageCookieValue()){
         changeLanguage(language);
+    }else{
+        changeLanguage('serbian');
     }
     const languageButtons = this.document.querySelectorAll('.language-button');
     //Add event listener to every language button

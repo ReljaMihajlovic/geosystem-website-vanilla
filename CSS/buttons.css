@@ -1,3 +1,6 @@
+button{
+    cursor: pointer;
+}
 .button{
     padding-block: 16px;
     padding-inline: 64px;
@@ -5,7 +8,7 @@
     font-weight: var(--font-semibold);
     border: none;
     border-radius: 10px;
-    cursor: pointer;
+    
 }
 .primary-button{
     color: var(--clr-primary-white);
@@ -32,7 +35,6 @@
     background-size: contain;
     border: none;
     background-color: transparent;
-    cursor: pointer;
 }
 @media screen and (max-width: 360px) {
     .button{

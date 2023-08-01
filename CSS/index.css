@@ -19,7 +19,7 @@
     position: relative;
 }
 .hero-info{
-    max-width: var(--column-5);
+    max-width: var(--column-6);
     display: flex;
     flex-direction: column;
 }
@@ -28,6 +28,7 @@
 }
 .hero p{
     font-weight: var(--font-semibold);
+    max-width: var(--column-5);
 }
 .hero-info small{
     color: var(--clr-gray-300);
@@ -141,9 +142,12 @@
 .project{
     position: relative;
     display: flex;
-    margin-bottom: 120px;
     column-gap: 64px;
+    margin-bottom: 120px;
     justify-content: space-between;
+}
+.project:last-of-type{
+    margin-bottom: 60px;
 }
 .project-container{
     max-width: var(--column-6);
@@ -180,11 +184,15 @@
     font-weight: var(--font-bold);
 }
 .project-image-container{
+    align-self: center;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     margin: 0 auto;
+}
+.project-image-container img{
+    box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
 }
 .project-image{
     position: absolute;
@@ -192,6 +200,7 @@
     border-radius: 50%;
     box-shadow: rgba(100, 100, 111, 0.6) 0px 7px 29px 0px;
     height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .change-sides{
     order: 1;
@@ -207,7 +216,7 @@
     height: 200px;
     top: 0px;
     right: 0px;
-    transform: translateY(-20%);
+    transform: translate(10%,-30%);
 }
 .third-image{
     object-fit: cover;
@@ -398,6 +407,9 @@ input:focus, textarea:focus{
     .project-container{
         max-width: var(--tablet-column-8);
     }
+    .project:last-of-type{
+        margin-bottom: 40px;
+    }
     .project-image-container img{
         position: static;
         border-radius: 0;
@@ -417,6 +429,7 @@ input:focus, textarea:focus{
         display: flex;
         flex-direction: row;
         column-gap: 2%;
+        align-items: stretch;
     }
     .third-image{
         aspect-ratio: 16 / 8;
@@ -515,6 +528,9 @@ input:focus, textarea:focus{
     }
     .first-image{
         aspect-ratio: 16 / 8;
+    }
+    .project:last-of-type{
+        margin-bottom: 0px;
     }
 
     /* Clients section */
