@@ -2,6 +2,7 @@
 /* Hero section */
 :root{
     --side-padding: 120px;
+    --first-element-top-padding: 120px;
 }
 .hero{
     padding-block: 120px;
@@ -194,6 +195,13 @@
 .project-image-container img{
     box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
 }
+.projects-container a{
+    color: var(--clr-primary-blue);
+}
+.project a{
+    color: var(--clr-primary-orange);
+}
+
 .project-image{
     position: absolute;
     object-fit: cover;
@@ -342,6 +350,7 @@ input:focus, textarea:focus{
         --side-padding: 56px;
         --service-card-margin: 38px;
         --client-logo-margin: 10px;
+        --first-element-top-padding: 72px;
     }
     /* Hero section */
     .hero{

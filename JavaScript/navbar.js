@@ -7,19 +7,17 @@ window.addEventListener('load', function () {
     }
     return false;
   }
-  function addPaddingToFirstElement(padding){
+  function setCssNavbarHeight(){
     const navbar = document.getElementById('navbar');
-    if(!padding){
-      padding = parseInt(window.getComputedStyle(navbar.nextElementSibling, null).getPropertyValue('padding-top'));
-    }
-    navbar.nextElementSibling.style.paddingTop = padding + navbar.offsetHeight + 'px';
+    document.documentElement.style.setProperty('--navbar-height', navbar.offsetHeight + 'px');
+    console.log( document.documentElement.style.getPropertyValue('--navbar-height'));
   }
-  function addPaddingToFirstElement(){
-    const navbar = document.getElementById('navbar');
-    const firstElementsPaddingTop = parseInt(window.getComputedStyle(navbar.nextElementSibling, null).getPropertyValue('padding-top'));
-    navbar.nextElementSibling.style.paddingTop = firstElementsPaddingTop + navbar.offsetHeight + 'px';
-  }
-  addPaddingToFirstElement();
+  //Initial setting of css navbar height variable
+  setCssNavbarHeight();
+  const mediaQuery640 = window.matchMedia("(max-width: 640px)");
+  mediaQuery640.onchange = (e) => {
+    setCssNavbarHeight();
+  };
   var lastScrollTop;
   window.addEventListener('scroll',function(){
     var scrollTop = window.pageYOffset || document.documentElement.scrollTop;

@@ -1,3 +1,9 @@
+:root{
+    --navbar-height: 0px;
+}
+#navbar + * {
+    padding-top: calc(var(--first-element-top-padding) + var(--navbar-height));
+}
 nav{
     background-color: var(--clr-primary-white);
     box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 5px;

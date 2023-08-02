@@ -2,6 +2,7 @@
     --side-padding: 120px;
     --shadow-sideline: rgba(0, 0, 0, 0.4) 0px 4px 4px;
     --shadow-icon: rgba(0, 0, 0, 0.1) 0px 4px 4px;
+    --first-element-top-padding: 80px;
 }
 .header-container{
     background-color: #F4FAFD;
@@ -14,7 +15,7 @@
     position: absolute;
     inset: 0;
     background-image: url("../Assets/topography-mesh.png");
-    opacity: 0.04;
+    opacity: 0.03;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
@@ -34,10 +35,10 @@ h1::before{
     content: '';
     position: absolute;
     inset: 0;
-    background-image: url("../Assets/mesh-project-background.png");
+    background-image: url("../Assets/topography-mesh-white.png");
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.1;
+    opacity: 0.08;
 }
 .additional-info{
     max-width: var(--column-12);
@@ -221,8 +222,8 @@ ul{
 @media screen and (max-width: 1024px) {
     :root{
         --side-padding: 32px;
-
         --font-size-h1: 38px;
+        --first-element-top-padding: 56px;
     }
     .wrapper{
         row-gap: 24px;
@@ -251,8 +252,8 @@ ul{
 @media screen and (max-width: 640px) {
     :root{
         --side-padding: 16px;
-
         --font-size-h1: 24px;
+        --first-element-top-padding: 24px;
     }
     .wrapper{
         row-gap: 16px;
