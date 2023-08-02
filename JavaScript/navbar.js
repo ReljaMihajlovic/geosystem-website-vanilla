@@ -10,7 +10,6 @@ window.addEventListener('load', function () {
   function setCssNavbarHeight(){
     const navbar = document.getElementById('navbar');
     document.documentElement.style.setProperty('--navbar-height', navbar.offsetHeight + 'px');
-    console.log( document.documentElement.style.getPropertyValue('--navbar-height'));
   }
   //Initial setting of css navbar height variable
   setCssNavbarHeight();

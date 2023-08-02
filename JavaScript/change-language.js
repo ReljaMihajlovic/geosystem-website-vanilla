@@ -4,7 +4,6 @@ window.addEventListener('load', function () {
         expirationDate.setFullYear(expirationDate.getFullYear() + 1);
         const cookieValue = language + "; expires=" + expirationDate.toUTCString() + "; path=/";
         document.cookie = "language=" + cookieValue;
-        console.log(document.cookie);
     }
     function getLanguageCookieValue(){
         const cookieValue = document.cookie
@@ -47,8 +46,10 @@ window.addEventListener('load', function () {
     for(btn of languageButtons){
         btn.addEventListener('click', function(){
             const language = this.getAttribute('data-language');
-            setLanguageCookie(language);
-            changeLanguage(language);
+            if(language !== 'german'){
+                setLanguageCookie(language);
+                changeLanguage(language);
+            }
         });
     }
 }, false);
