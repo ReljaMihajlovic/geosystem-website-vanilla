@@ -28,7 +28,13 @@ window.addEventListener('load', function () {
                 if(key in mergedObj){
                     element.innerHTML = mergedObj[key];
                 }
-            })
+            });
+            console.log();
+            if(document.body.getAttribute('data-page').includes('project-')){
+                console.log("Da");
+                changeBackgroundHeight();
+                changeDecorationLinesHeight();
+            }
         }).catch((error) => {
             console.log("Došlo je do greške prilikom promene jezika." + error);
         });
